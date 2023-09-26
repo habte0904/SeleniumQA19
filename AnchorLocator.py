@@ -7,6 +7,7 @@ driver = webdriver.Chrome()
 
 driver.get("https://www.facebook.com/")
 
+# both link text and partial link text
 # Link text locator
 print(driver.current_url)
 #driver.find_element(By.LINK_TEXT, "Forgot password?").click()

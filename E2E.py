@@ -40,3 +40,20 @@ time.sleep(2)
 driver.find_element(By.XPATH, "//button[@data-date='2023-11-08']").click()
 time.sleep(3)
 
+# passenger
+passenger = driver.find_element(By.XPATH, "//input[contains(@id,'passenger-input')]")
+passenger.click()
+time.sleep(2)
+
+adult = driver.find_element(By.XPATH, "//button[@data-testid='adult-increment']")
+i = 0
+while i<3:
+    adult.click()
+    i = i+1
+time.sleep(3)
+
+# search button
+search = driver.find_element(By.XPATH, "//div[@id='search-submit-button']")
+search.click()
+
+

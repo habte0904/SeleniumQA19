@@ -21,3 +21,22 @@ d.send_keys("wash")
 time.sleep(2)
 d.send_keys(Keys.ARROW_DOWN)
 time.sleep(2)
+
+# outbound date
+outbound = driver.find_element(By.XPATH, "//input[@id='outbound-date-input']")
+outbound.click()
+time.sleep(2)
+button1 = driver.find_element(By.XPATH, "//button[@data-date='2023-10-18']")
+button1.click()
+time.sleep(2)
+
+# return date
+returndate = driver.find_element(By.XPATH, "//input[@id='return-date-input']")
+returndate.click()
+time.sleep(2)
+next = driver.find_element(By.XPATH, "//button[@aria-label='Next month']")
+next.click()
+time.sleep(2)
+driver.find_element(By.XPATH, "//button[@data-date='2023-11-08']").click()
+time.sleep(3)
+

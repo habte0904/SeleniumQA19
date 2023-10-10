@@ -18,7 +18,7 @@ class unittestFramework(unittest.TestCase):
 
     @classmethod
     def tearDownClass(cls) -> None:
-        print("From teardownclass method")
+        print("From tear down class method")
 
     # ====================
     # Test method
